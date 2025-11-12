@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+  
+  body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .word { /* the entire things you see in the page*/ 
+    position: relative;
+    height: 100vh;
+    background: url('Media Folder/imagesforweb/BG.jpg') no-repeat center center/cover; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    padding-left: 6rem;
+    color: white;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.9) 100%),
+    rgba(8, 36, 24, 0.6); 
+    z-index: 1;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    padding: 2rem;
+  
+  }
+  
+  .content h3 { /* Welcome to... */
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    font-family: 'Michroma', serif;
+  }
+  
+  .content h1 { /* CODE */
+    font-family: 'Michroma', serif;
+    font-size: 4rem;
+    margin: 0.5rem 0 1rem;
+    color: #ffffff;
+    animation: typing 1s steps(14, end) forwards, blink 1s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block; 
+    width: 0;
+    border-right: 3px solid #00ff22;
+    text-shadow: 0 0 5px #00ff22,
+                 0 0 10px #00ff22,
+                 0 0 20px #00ff22;
+  }
+  
+  .content h1 span { /* BREAKERS */
+    color: #ffffff; 
+    font-size: 4rem;
+    font-family: 'Michroma', serif;
+    text-shadow: 0 0 5px #ff0000,
+                 0 0 10px #ff0000,
+                 0 0 20px #ff0000;
+  }
+
+/* ################### ANIMATION KEYFRAMES ######################## */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 12.7ch;
+    }
+  }
+  
+  @keyframes blink {
+    from, to {
+      border-right-color: #ffffff;
+    }
+    50% {
+      border-right-color: transparent;
+    }
+/* ################### ANIMATION KEYFRAMES ######################## */
+
+  }
+  .content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: 'Michroma', serif;
+    margin-bottom: 2rem;
+    color: #e5e5e5;
+  }
+  
+  .btn {
+    display: inline-block;
+    font-family: 'Michroma', serif;
+    background: #F4C542;
+    color: #0e2d1d;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    transition: 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #ffdd5c;
+    transform: scale(1.05);
+  }
+  

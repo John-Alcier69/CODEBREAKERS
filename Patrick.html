@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PATRICK JUSTINE SANTOS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="patrick.css" />
+</head>
+<body>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="return-row">
+      <a href="memberselection.html" class="return-btn">RETURN</a>
+    </div>
+    <nav class="subjects">
+      <button class="subject-btn active" data-sub="0">P.E</button>
+      <button class="subject-btn" data-sub="1">NSTP</button>
+      <button class="subject-btn" data-sub="2">SINAG</button>
+      <button class="subject-btn" data-sub="3">COMM</button>
+    </nav>
+    <div class="class-label">BSIT 1-1</div>
+  </header>
+
+  <main class="container">
+    <!-- Left sidebar title -->
+    <aside class="left-col">
+      <div class="profile-card">
+        <h2 class="section-title">PROFILE</h2>
+        <h1 class="student-name" id="student-name">PATRICK JUSTINE SANTOS</h1>
+      </div>
+
+        <!-- letter box outside info card -->
+        <div class="letter-box">
+          <p class="letter-text">INFORMATION</p>
+        </div>
+      <div class="info-card">
+        <!-- letter box -->
+        <!-- tabs always visible -->
+        <div class="tabs-row">
+          <button class="tab-btn active" data-tab="photos">PHOTOS</button>
+          <button class="tab-btn" data-tab="videos">VIDEOS</button>
+        </div>
+
+        <!-- content area (changes with subject, tab, and page) -->
+        <div class="content-wrapper">
+          <div class="content-inner" id="content-inner">
+            <!-- injected by JS -->
+          </div>
+        </div>
+
+        <!-- pagination / nav -->
+        <div class="card-footer">
+          <button id="backBtn" class="nav-btn">BACK</button>
+          <div class="pager" id="pager">1 / 1</div>
+          <button id="nextBtn" class="nav-btn">NEXT</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Profile image on right side -->
+    <aside class="right-col">
+      <div class="profile-img-card">
+        <img src="Media Folder/imagesforweb/patrick santos.png" alt="Profile" id="fixed-person">
+      </div>
+    </aside>
+  </main>
+
+  <script src="patrick.js"></script>
+</body>
+</html>
